@@ -96,8 +96,28 @@ public class ItemDAOImpl implements ItemDAO ,Cloneable{
 	}
 	@Override
 	public List<ItemDTO> getAll() throws SQLException {
-		ResultSet rs=s.executeQuery("select * from item");
-		return null;
+		ResultSet rs=s.executeQuery("select * from item;");
+		List<ItemDTO> l=new ArrayList<>();
+		while(rs.next())
+		{	ItemDTO i=new ItemDTO();
+			i.setItemname(rs.getString(2));
+			i.setItemtype(rs.getString(3));
+			i.setPrice(rs.getInt(4));
+			i.setItemid(rs.getInt(1));
+		
+			l.add(i);
+		}
+		return l;
+	}
+	public List<String> getAllItemName() throws SQLException
+	{
+		ResultSet rs=s.executeQuery("select itemname from item;");
+		List<String> l=new ArrayList<>();
+		while(rs.next())
+		{
+			l.add(rs.getString(1));
+		}
+		return l;
 	}
 	@Override
 	public List<ItemDTO> getAllByType(String itemtype) throws SQLException {

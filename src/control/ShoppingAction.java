@@ -10,6 +10,8 @@ import javax.servlet.http.HttpSession;
 
 import daopack.InvoiceMasterDAOImpl;
 import daopack.InvoiceTransDAOImpl;
+import servicepack.PDFService;
+import servicepack.PDFServiceImpl;
 import servicepack.ShoppingService;
 import servicepack.ShoppingServiceImpl;
 
@@ -34,7 +36,8 @@ public class ShoppingAction implements Action{
 				{
 					shopServ.insertInvoicem((Date)session.getAttribute("date"), 
 							session.getAttribute("invoiceid").toString(),session.getAttribute("username").toString());
-					
+					PDFService pdf=PDFServiceImpl.getPDFServ();
+					pdf.createPdf(id);
 				}
 			}
 			else if(name.equals("formid"))
