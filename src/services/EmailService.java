@@ -1,4 +1,4 @@
-package servicepack;
+package services;
 
 public class EmailService {
 

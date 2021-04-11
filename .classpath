@@ -14,9 +14,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/xmlbeans-bin-5.0.0-20210314/xmlbeans-5.0.0/lib/xmlbeans-5.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/xmlbeans-bin-5.0.0-20210314/xmlbeans-5.0.0/lib/xmlbeans-5.0.0-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/xmlbeans-bin-5.0.0-20210314/xmlbeans-5.0.0/lib/xmlbeans-5.0.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3/barcodes-7.1.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3/barcodes-7.1.3-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3/barcodes-7.1.3-sources.jar"/>
@@ -52,38 +49,26 @@
 	<classpathentry kind="lib" path="C:/Users/VC/Downloads/twilio-8.9.0-jar-with-dependencies.jar"/>
 	<classpathentry kind="lib" path="C:/Users/VC/Downloads/commons-collections4-4.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/VC/Downloads/itextpdf/itextpdf-5.5.9.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/barcodes-7.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/barcodes-7.1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/barcodes-7.1.3-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/font-asian-7.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/forms-7.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/forms-7.1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/forms-7.1.3-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/hyph-7.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/io-7.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/io-7.1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/io-7.1.3-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/kernel-7.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/kernel-7.1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/kernel-7.1.3-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/layout-7.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/layout-7.1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/layout-7.1.3-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/pdfa-7.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/pdfa-7.1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/pdfa-7.1.3-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/pdftest-7.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/pdftest-7.1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/pdftest-7.1.3-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/sign-7.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/sign-7.1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/sign-7.1.3-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/styled-xml-parser-7.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/styled-xml-parser-7.1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/styled-xml-parser-7.1.3-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/svg-7.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/svg-7.1.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/VC/Downloads/iText7-Core-7.1.3 (1)/svg-7.1.3-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/VC/Downloads/log4j-1.2.17/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/commons-compress-1.20-bin/commons-compress-1.20/commons-compress-1.20.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/slf4j-log4j12-1.7.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/logback-core-1.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/logback-classic-1.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/slf4j-api-1.7.30.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/slf4j.jar/slf4j.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/poi-bin-5.0.0-20210120/poi-5.0.0/poi-examples-5.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/poi-bin-5.0.0-20210120/poi-5.0.0/poi-excelant-5.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/poi-bin-5.0.0-20210120/poi-5.0.0/poi-integration-5.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/poi-bin-5.0.0-20210120/poi-5.0.0/poi-ooxml-5.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/poi-bin-5.0.0-20210120/poi-5.0.0/poi-ooxml-full-5.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/poi-bin-5.0.0-20210120/poi-5.0.0/poi-ooxml-lite-5.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/poi-bin-5.0.0-20210120/poi-5.0.0/poi-scratchpad-5.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/poi-bin-5.0.0-20210120/poi-5.0.0/poi-5.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/poi-bin-5.0.0-20210120/poi-5.0.0/ooxml-lib/commons-compress-1.20.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/poi-bin-5.0.0-20210120/poi-5.0.0/ooxml-lib/curvesapi-1.06.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/poi-bin-5.0.0-20210120/poi-5.0.0/ooxml-lib/xmlbeans-4.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/xmlbeans-bin-5.0.0-20210314/xmlbeans-5.0.0/lib/log4j-api-2.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/xmlbeans-bin-5.0.0-20210314/xmlbeans-5.0.0/lib/log4j-core-2.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VC/Downloads/xmlbeans-bin-5.0.0-20210314/xmlbeans-5.0.0/lib/xmlbeans-5.0.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

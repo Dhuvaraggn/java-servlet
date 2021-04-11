@@ -10,8 +10,10 @@ import javax.servlet.http.HttpSession;
 
 import daopack.InvoiceMasterDAOImpl;
 import daopack.InvoiceTransDAOImpl;
-import servicepack.PDFService;
-import servicepack.PDFServiceImpl;
+import services.ExcelService;
+import services.ExcelServiceImpl;
+import services.PDFService;
+import services.PDFServiceImpl;
 import servicepack.ShoppingService;
 import servicepack.ShoppingServiceImpl;
 
@@ -30,26 +32,24 @@ public class ShoppingAction implements Action{
 		while(st.hasMoreElements()) {
 			String name=st.nextElement();
 			String value=request.getParameter(name);
-			if(name.equals("shopid"))
+			if(!(name.equals("shopid")||name.equals("formid")))
+					{
+				shopServ.insert(id, name, Integer.parseInt(value.toString()));
+				
+					}
+			else if(name.equals("shopid"))
 			{
-				if(request.getParameter("shopid").equals("shop3"))
-				{
-					shopServ.insertInvoicem((Date)session.getAttribute("date"), 
-							session.getAttribute("invoiceid").toString(),session.getAttribute("username").toString());
-					PDFService pdf=PDFServiceImpl.getPDFServ();
-					pdf.createPdf(id);
-				}
-			}
-			else if(name.equals("formid"))
-			{
-			}
-			else
-			{
-			//session.setAttribute(name, value);
-			shopServ.insert(id, name, Integer.parseInt(value.toString()));
 			}
 		}
-
+		if(request.getParameter("shopid").equals("shop3"))
+		{
+			shopServ.insertInvoicem((Date)session.getAttribute("date"), 
+					session.getAttribute("invoiceid").toString(),session.getAttribute("username").toString());
+			PDFService pdf=PDFServiceImpl.getPDFServ();
+			pdf.createPdf(id);
+			ExcelService excel=ExcelServiceImpl.getExcelServ();
+			excel.excelWrite(id);
+		}
 		return "shopping."+s;
 	}
 
