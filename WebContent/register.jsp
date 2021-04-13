@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+</head>
+	
+	<body>
+		<h1>  Registration form</h1>
+		<form action="Servlet;jsessionid=<%=session.getId()%>">
+		
+			<input type="hidden" name="formid" value="register"/>
+		<label for="userid">userid:</label><br/>
+			<input type="number" name="userid" id="userid" placeholder="enter ur userid" autofocus required>*
+			</input>
+			<br/>
+			<label for="username">username:</label><br/>
+			<input type="text" name="username" id="username" placeholder="enter ur full name" autofocus required>*
+			</input>
+			<br/>
+			
+			
+		<!-- 	<label for="email">Email:</label><br/>
+			<input type="email" name="email" id="email" placeholder=" enter ur email" required>
+			*</input>
+			<br/>
+			
+			<label for="dateofbirth">Date of Birth:</label><br/>
+			<input type="date" name="dateofbirth" id="dateofbirth"  required>
+			*</input>
+			<br/>
+			
+			<label for="age">Age:</label><br/>
+			<input type="number" name="age" id="age" size="6" min="18" max="120" step="1" value="21" required>
+			*</input>
+			<br/>
+			
+			<label for="experience">Year of Experience:</label><br/>
+			<input type="range" name="experience" id="experience" min="0" max="100" step="1" value="0" onchange="displayRating(this);"  >
+			*</input>
+			<span id="ratingvalue">0</span>
+			<br/>
+			<label for="phoneno">Phone no:</label><br/>
+			<input type="text" name="phoneno" id="phoneno" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX"x`  required>
+			*</input>
+			<br/>
+			 -->
+			<lable for="pass"> password:</label></br/>
+			<input type="password" name="pass" id="pass"  placeholder="enter ur password"  required>
+			*</input>
+			<br/>
+			<input type="hidden" name="formid" value="register"/>
+			<input type="submit" value="Register"/>
+			
+		</form>		
+	</body>
+</html>
+</body>
+</html>
