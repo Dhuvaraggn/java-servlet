@@ -25,7 +25,7 @@ ResourceBundle rb=(ResourceBundle)session.getAttribute("rb");
 			
 			<input type="submit" value="Login"/>
 		</form>
-			<form action="register.html">
+			<form action="Servlet;jsessionid=<%=session.getId()%>">
 				<input type="hidden" name="formid" value="register">
 				<input type="submit" value="Register">
 			</form>

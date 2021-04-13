@@ -12,6 +12,8 @@ public class RegisterAction implements Action {
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) throws SQLException {
+		if(request.getParameter("username")!=null)
+		{
 		RegisterServiceImpl registerServ=RegisterServiceImpl.getRegisterServ();
 		registerServ.setUserDAO(UserDAOImpl.getUserDAOImpl());
 		String username=request.getParameter("username");
@@ -22,7 +24,8 @@ public class RegisterAction implements Action {
 		{
 			return "register.success";
 		}
-		return "register";
+		}
+		return "register.new";
 	}
 
 }
