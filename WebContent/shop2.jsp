@@ -16,7 +16,24 @@
 <title>GoShop</title>
 </head>
 <body>
+<script>
+function plusclick(ele)
+{ var id=ele.id;
+console.log("clicked"+id);
+document.getElementsByName(id)[0].stepUp();
+}
+	function minusclick(ele)
+	{ var id=ele.id;
+	console.log("clicked"+id);
+	if(document.getElementsByName(id)[0].value>0)
+		{
+	document.getElementsByName(id)[0].stepDown();
+	
+		}}
+</script>
+	<%@ include file="logout.jsp" %>
 <h1>Fruit Shop</h1>
+
 	<form action="Servlet;jsessionid=<%=session.getId()%>" method="post">
 	<input type="hidden" name="formid" value="shopping">
 	<input type="hidden" name="shopid" value="shop2">
@@ -40,10 +57,11 @@
 			
 		%>-->
 		<ajith:getData itemtype="fruit"/>
-		<input type="submit" value="Next shop..">
+		<div style="right:10px;position:absolute;bottom:10px;">
+		<input style="width:100px;height:30px;background-color:rgb(20, 200, 76);" type="submit" value="Next shop >>>">
+		</div>
 	</form>
 		
-	<%@ include file="logout.jsp" %>
 </body>
 </html>
 </body>

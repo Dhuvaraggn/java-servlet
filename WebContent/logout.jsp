@@ -7,9 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div style="float:right;">
 <form action="Servlet;jsessionid=<%=session.getId()%>" >
 	<input name="formid" type="hidden" value="logout">
 	<input type="submit" name="logout" value="logout">
 </form>
+</div>
 </body>
 </html>

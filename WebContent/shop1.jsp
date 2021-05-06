@@ -15,6 +15,22 @@
 <title>GoShop</title>
 </head>
 <body>
+<script>
+	function plusclick(ele)
+{ var id=ele.id;
+console.log("clicked"+id);
+document.getElementsByName(id)[0].stepUp();
+}
+	function minusclick(ele)
+	{ var id=ele.id;
+	console.log("clicked"+id);
+	if(document.getElementsByName(id)[0].value>0)
+		{
+	document.getElementsByName(id)[0].stepDown();
+	
+		}}
+</script>
+	<%@ include file="logout.jsp" %>
 <h1>Vegetable Shop</h1>
 	<form action="Servlet;jsessionid=<%=session.getId()%>" method="post">
 	<input type="hidden" name="formid" value="shopping">
@@ -30,9 +46,8 @@
 			itemServ.setItemDAO(ItemDAOImpl.getItemDAOImpl());
 			List<ItemDTO> l=itemServ.getAllByType("vegetable");
 			for(ItemDTO it:l){
-				out.println("<div>");
+				out.println("<div width=\"25%\" height=\"25%\">");
 				out.println("<h1>"+it.getItemname()+"</h1>");
-
 				out.println("<img src=\""+it.getImageurl()+"\" width=\"250\" height=\"150\"></img>");
 				out.println("<h1> <input type=\"number\"  value=\"0\" name="+it.getItemname()+"></h1>");
 				out.println("<h2> Rupees: "+it.getPrice()+"<h2>");
@@ -42,10 +57,11 @@
 		%>-->
 		<ajith:getData itemtype="vegetable"/>
 		
-		<input type="submit" value="Next shop..">
+		<div style="right:10px;position:absolute;bottom:10px;">
+		<input style="width:100px;height:30px;background-color:rgb(20, 200, 76);" type="submit" value="Next shop >>>">
+		</div>
 	</form>
 	
-	<%@ include file="logout.jsp" %>
 </body>
 </html>
 </body>

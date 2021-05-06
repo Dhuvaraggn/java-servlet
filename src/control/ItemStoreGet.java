@@ -38,7 +38,7 @@ public class ItemStoreGet extends TagSupport{
 		System.out.println("storeget"+l);
 		float total=0;
 		try {
-			out.println("<h1> ItemName		Quantity		Price/Kilo			Price</h1>	");
+			out.println("<h3> ItemName		Quantity		Price/Kilo			Price</h3>	");
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -49,7 +49,7 @@ public class ItemStoreGet extends TagSupport{
 			try {
 				if(i.getItemname().equals(it.getItemname()))
 				{
-				out.println("<h1>"+ i.getItemname() +"   	"+i.getQty() +"			"+it.getPrice() +"	 		"+it.getPrice()*i.getQty()+"</h1>");
+				out.println("<h4>"+ i.getItemname() +"   	"+i.getQty() +"			"+it.getPrice() +"	 		"+it.getPrice()*i.getQty()+"</h4>");
 				total+=it.getPrice()*i.getQty();
 				}
 			} catch (IOException e) {
@@ -59,12 +59,12 @@ public class ItemStoreGet extends TagSupport{
 			}
 		}
 		try {
-			out.println("<h1> sgst:"+total*0.01+"</h1>");
+			out.println("<h3> sgst:"+total*0.01+"</h3>");
 
-			out.println("<h1> cgst:"+total*0.01+"</h1>");
+			out.println("<h3> cgst:"+total*0.01+"</h3>");
 
-			out.println("<h1> discount:"+total*0.0025+"</h1>");
-			out.println("<h1>total:"+(total+total*0.02-total*0.0025)+"</h1>");
+			out.println("<h3> discount:"+total*0.0025+"</h3>");
+			out.println("<h2>total:"+(total+total*0.02-total*0.0025)+"</h2>");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

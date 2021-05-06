@@ -5,15 +5,31 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<style>
+
+	.cont
+	{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+
+</style>
 </head>
 <body>
+	<div class="cont">
+	<div class="innr">
 	<form action="Servlet;jsessionid=<%=session.getId() %>" >
 		<input type="hidden" name="formid" value="lang">
-		<select name="languague" id="languague">
+
+		<select  name="languague" id="languague">
 			<option name="ta" value="ta">tamil</option>
 			<option name="te" value="te">telugu</option> 
 			</select>
 			<input type="submit" value="login...">
+
 	</form>
+	</div>
+	</div>
 </body>
 </html>

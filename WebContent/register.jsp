@@ -6,18 +6,19 @@
 </head>
 	
 	<body>
+	<div align="center">
 		<h1>  Registration form</h1>
 		<form action="Servlet;jsessionid=<%=session.getId()%>">
-		
+		<br/>
 			<input type="hidden" name="formid" value="register"/>
 		<label for="userid">userid:</label><br/>
 			<input type="number" name="userid" id="userid" placeholder="enter ur userid" autofocus required>*
 			</input>
-			<br/>
+			<br/>	<br/>
 			<label for="username">username:</label><br/>
 			<input type="text" name="username" id="username" placeholder="enter ur full name" autofocus required>*
 			</input>
-			<br/>
+			<br/>	<br/>
 			
 			
 		<!-- 	<label for="email">Email:</label><br/>
@@ -48,11 +49,12 @@
 			<lable for="pass"> password:</label></br/>
 			<input type="password" name="pass" id="pass"  placeholder="enter ur password"  required>
 			*</input>
-			<br/>
+			<br/>	<br/>
 			<input type="hidden" name="formid" value="register"/>
 			<input type="submit" value="Register"/>
 			
 		</form>		
+		</div>
 	</body>
 </html>
 </body>

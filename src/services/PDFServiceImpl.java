@@ -1,9 +1,16 @@
 package services;
 
+import java.awt.image.BufferedImage;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Map;
+
+import javax.imageio.ImageIO;
 
 import com.itextpdf.io.image.ImageData;
 import com.itextpdf.io.image.ImageDataFactory;
@@ -66,10 +73,11 @@ public class PDFServiceImpl implements PDFService,Cloneable{
 			d.add(new Paragraph(""+l.getDayOfWeek()).setTextAlignment(TextAlignment.RIGHT));
 			
 			
-			float [] widths= {200F,100F,100F,100F};
+			float [] widths= {100F,100F,100F,100F,100F};
 			Table table=new Table(widths);
 			table.setHorizontalAlignment(HorizontalAlignment.RIGHT);
 			table.addCell(new Cell().add(new Paragraph("Description")));
+			table.addCell(new Cell().add(new Paragraph("Product image")));
 			   table.addCell(new Cell().add(new Paragraph("Qty")));       
 			      table.addCell(new Cell().add(new Paragraph("Unit Price")));       
 			      table.addCell(new Cell().add(new Paragraph("Total")));  
@@ -83,8 +91,25 @@ public class PDFServiceImpl implements PDFService,Cloneable{
 				for(int j=0;j<invtransl.size();j++)
 				{
 					if(iteml.get(i).getItemname().equals(invtransl.get(j).getItemname()))
-					{
+					{	 
 						 table.addCell(new Cell().add(new Paragraph(iteml.get(i).getItemname())));
+						/* System.out.print(iteml.get(i).getImageurl().toString());
+						 URL url=new URL(iteml.get(i).getImageurl().toString());
+						 InputStream is=url.openStream();
+						 OutputStream os=new FileOutputStream("C:\\\\Users\\\\VC\\\\eclipse-workspace\\\\project\\\\WebContent\\\\"+iteml.get(i).getItemname()+".jpg");
+						 byte[] b=new byte[2048];
+						 
+						 int length;
+						 while((length=is.read(b))!=-1)
+						 {os.write(b,0,length);
+						 }
+						 is.close();
+						 os.close();*/
+						 ImageData data1=ImageDataFactory.create("C:\\\\Users\\\\VC\\\\eclipse-workspace\\\\project\\\\WebContent\\\\"+iteml.get(i).getItemname()+".jpg");
+						 
+						 Image img1=new Image(data1);
+						 img1.scaleAbsolute(50, 50);
+						 table.addCell(img1);
 						 table.addCell(new Cell().add(new Paragraph(invtransl.get(j).getQty()+"")));
 						 table.addCell(new Cell().add(new Paragraph(iteml.get(i).getPrice()+"")));
 						 table.addCell(new Cell().add(new Paragraph(( invtransl.get(j).getQty()*iteml.get(i).getPrice())+"")));

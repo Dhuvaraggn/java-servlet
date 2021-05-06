@@ -34,6 +34,8 @@ public class ShoppingAction implements Action{
 		while(st.hasMoreElements()) {
 			String name=st.nextElement();
 			String value=request.getParameter(name);
+			System.out.println("\nnameessssssss");
+			System.out.print(name);
 			if(!(name.equals("shopid")||name.equals("formid")))
 					{
 				shopServ.insert(id, name, Integer.parseInt(value.toString()));

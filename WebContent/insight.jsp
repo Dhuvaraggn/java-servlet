@@ -13,13 +13,14 @@
 	<!--  <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHEbO3ykRE6WHx9gVzEkSMKCS3iAQ4wyICmeMoJkpyJrKyLODDTjOWxvxPIja7UJL3xUY&usqp=CAU')"; width="1000" height="250">
 	  -->
 	  
+	<%@ include file="logout.jsp" %>
+	 <div align="center"> 
 	  <ajith:getStored invoiceid="<%= session.getAttribute(\"invoiceid\").toString() %>"/>
 	<form action="Servlet;jsessionid=<%= session.getId()%>">	
 		<input type="hidden" name="invoiceid" value=<%= session.getAttribute("invoiceid") %>>
 		<input type="hidden" name="formid" value="print">	
 	  <input type="submit" value="download invoice pdf" >
 	</form>
-	<%@ include file="logout.jsp" %>
 	</div>
 </body>
 </html>

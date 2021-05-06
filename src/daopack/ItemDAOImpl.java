@@ -104,7 +104,7 @@ public class ItemDAOImpl implements ItemDAO ,Cloneable{
 			i.setItemtype(rs.getString(3));
 			i.setPrice(rs.getInt(4));
 			i.setItemid(rs.getInt(1));
-		
+			i.setImageurl(rs.getString(5));
 			l.add(i);
 		}
 		return l;

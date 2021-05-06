@@ -29,11 +29,16 @@ public class ItemGet  extends TagSupport{
 		System.out.print(l);
 		for(ItemDTO it:l){
 			System.out.print(it);
-			out.println("<div>");
+			out.println("<div style= \"float:left;padding:0 15px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s;width: 20%;height: 40%;\" >");
 			out.println("<h1>"+it.getItemname()+"</h1>");
 
-			out.println("<img src=\""+it.getImageurl()+"\" width=\"250\" height=\"150\"></img>");
-			out.println("<h1> <input type=\"number\" value=\"0\" name="+it.getItemname()+"></h1>");
+			out.println("<img src=\""+it.getImageurl()+"\" width=\"150px\" height=\"150px\"+></img>");
+			out.println("<h1> <input type=\"number\" step=\"1\" value=\"0\" name="+it.getItemname()+"></h1>");
+			out.println("<button id="+it.getItemname()+" type=\"button\" onclick=\"plusclick(this)\" >+</button>");
+			
+	
+			
+			out.println("<button id="+it.getItemname()+" type=\"button\" onclick=\"minusclick(this)\">-</button>");
 			out.println("<h2> Rupees: "+it.getPrice()+"<h2>");
 			out.println("</div>");
 		}

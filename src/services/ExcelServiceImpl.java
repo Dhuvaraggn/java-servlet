@@ -46,7 +46,7 @@ public class ExcelServiceImpl implements ExcelService,Cloneable{
 	public ExcelServiceImpl(){
 	//writeExcel(wb,sheet);
 	//readExcel(wb,sheet);	
-		String filename="C:\\\\Users\\\\VC\\\\eclipse-workspace\\\\servletproj\\\\InvoiceExcel.xlsx";  
+		String filename="C:\\\\Users\\\\VC\\\\eclipse-workspace\\\\project\\\\InvoiceExcel.xlsx";  
 
 		try {
 			System.out.print(getrowExcel(filename));
